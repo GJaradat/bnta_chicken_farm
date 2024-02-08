@@ -67,12 +67,13 @@ public class FarmerTest {
             assertThat(chick.getEggs()).isEqualTo(0);
         }
     }
-    
+
     @Test
     public void canAssignEggsForSale() {
         farmer.collectEggs(farm);
-        farmer.assignEggsForSale(farm);
-        assertThat(farm.getEggsForSale()).isEqualTo(10);
+        farmer.assignEggsForSale(farm,8);
+        assertThat(farm.getEggsForSale()).isEqualTo(8);
+        assertThat(farmer.getCollectedEggs()).isEqualTo(2);
     }
 
 
