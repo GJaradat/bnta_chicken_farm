@@ -33,5 +33,8 @@ public class Farmer {
         this.collectedEggs += freshEggs;
     }
 
-
+    public void assignEggsForSale(Farm farm){
+        farm.setEggsForSale(this.collectedEggs);
+        this.collectedEggs = 0;
+    }
 }
