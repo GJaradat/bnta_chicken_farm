@@ -35,5 +35,5 @@ public class ChickenTest {
         assertThat(chick.getEggs()).isEqualTo(10);
     }
 
-
+    //METHODS
 }
