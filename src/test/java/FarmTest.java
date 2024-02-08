@@ -73,6 +73,13 @@ public class FarmTest {
     @Test
     public void canRemoveChicken() {
         farm.removeChicken(koko);
-        assertThat(farm.getChickens().size()).isEqualTo(2);
+        assertThat(farm.countChicken()).isEqualTo(2);
     }
+
+    @Test
+    public void canCountChicken(){
+        assertThat(farm.countChicken()).isEqualTo(3);
+    }
+
+
 }

@@ -48,5 +48,8 @@ public class Farm {
         this.chickens.remove(chicken);
     }
 
+    public int countChicken(){
+        return this.chickens.size();
+    }
 
 }
