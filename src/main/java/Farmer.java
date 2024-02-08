@@ -23,4 +23,15 @@ public class Farmer {
     public void setCollectedEggs(int collectedEggs) {
         this.collectedEggs = collectedEggs;
     }
+
+    public void collectEggs(Farm farm){
+        int freshEggs = 0;
+        for(Chicken chick : farm.getChickens()){
+            freshEggs += chick.getEggs();
+            chick.setEggs(0);
+        }
+        this.collectedEggs += freshEggs;
+    }
+
+
 }
