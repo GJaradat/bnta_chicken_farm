@@ -76,5 +76,11 @@ public class FarmerTest {
         assertThat(farmer.getCollectedEggs()).isEqualTo(2);
     }
 
+    @Test
+    public void canEatEggs(){
+        farmer.collectEggs(farm);
+        farmer.eatEggs(5);
+        assertThat(farmer.getCollectedEggs()).isEqualTo(5);
+    }
 
 }

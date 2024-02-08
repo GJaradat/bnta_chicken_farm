@@ -39,4 +39,10 @@ public class Farmer {
             this.collectedEggs -= eggs;
         }
     }
+
+    public void eatEggs(int eggs){
+        if (this.getCollectedEggs() >= eggs) {
+            this.collectedEggs -= eggs;
+        }
+    }
 }
